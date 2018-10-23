@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AoG SignIn Sample</title>
+
+    <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+  </head>
+  <body>
+    <div id="loading">
+      Loading...
+    </div>
+    <div id="loaded">
+      <div id="user-signed-out" class="hidden">
+          <div id="firebaseui-auth-container"></div>
+      </div>
+      <div id="user-signed-in" class="hidden">
+          <div id="user-info">
+            <div id="photo-container">
+              <img id="photo">
+            </div>
+            <div id="name"></div>
+            <div id="email"></div>
+            <div id="phone"></div>
+            <div id="is-new-user"></div>
+            <div class="clearfix"></div>
+          </div>
+          <p>
+            <button id="sign-out">Sign Out</button>
+            <button id="continue">Continue to Assistant</button>
+          </p>
+        </div>
+    </div>
+    
+    <script src="app.js?v=2"></script>
+
+  </body>
+</html>
